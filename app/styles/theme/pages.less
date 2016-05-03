@@ -100,10 +100,6 @@
   padding-top: 110px;
 }
 
-.loginscreen.middle-box {
-  width: 300px;
-}
-
 .loginColumns {
   max-width: 800px;
   margin: 0 auto;
@@ -129,6 +125,33 @@
 }
 
 .wrapper .middle-box {
+  &.loginscreen {
+	padding: 10px 0 25px;
+	margin-top: 0;
+	width: 300px;
+	.form-group {
+	  label {
+		display: block;
+		float: left;
+		text-align: left;
+		margin-left: 1px;
+		min-height: 22px;
+		line-height: 22px;
+		width: 100%;
+		margin-bottom: 2px;
+		font-size: 12px;
+		font-weight: 600;
+	  }
+	}
+	.checkbox {
+	  float: left;
+	  width: 100%;
+	  margin: 0 0 20px;
+	  label {
+		float: left;
+	  }
+	}
+  }
   margin-top: 140px;
 }
 

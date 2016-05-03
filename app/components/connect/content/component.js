@@ -184,16 +184,11 @@ class ContentConnectComponent extends Component {
                     <h5>New connection</h5>
                   </div>
                   <div className="ibox-content">
-                    <div className="middle-box text-center loginscreen"
-                      style={{ marginTop: '-5px' }}
-                    >
+                    <div className="middle-box text-center loginscreen">
                       <div>
                         <form className="m-t" role="form" onSubmit={this.handleSubmit}>
                           <input type="hidden" ref="id" value={this.getValue('id')} />
                           <div className={this.getClasses('name')}>
-                            <label className="error">
-                              {this.props.getValidationMessages('name')}
-                            </label>
                             <input className="form-control" name="name"
                               onChange={this.onChange('name')}
                               placeholder="Connection name"
@@ -201,12 +196,12 @@ class ContentConnectComponent extends Component {
                               value={this.getValue('name')}
                               type="text"
                             />
+                            <label className="error">
+                              {this.props.getValidationMessages('name')}
+                            </label>
                           </div>
 
                           <div className={this.getClasses('user')}>
-                            <label className="error">
-                              {this.props.getValidationMessages('user')}
-                            </label>
                             <input className="form-control" name="user"
                               placeholder="User"
                               ref="user"
@@ -214,12 +209,12 @@ class ContentConnectComponent extends Component {
                               value={this.getValue('user')}
                               onChange={this.onChange('user')}
                             />
+                            <label className="error">
+                              {this.props.getValidationMessages('user')}
+                            </label>
                           </div>
 
                           <div className={this.getClasses('password')}>
-                            <label className="error">
-                              {this.props.getValidationMessages('password')}
-                            </label>
                             <input className="form-control" name="password"
                               placeholder="Password"
                               ref="password"
@@ -227,13 +222,13 @@ class ContentConnectComponent extends Component {
                               type="password"
                               onChange={this.onChange('password')}
                             />
+                            <label className="error">
+                              {this.props.getValidationMessages('password')}
+                            </label>
                           </div>
 
 
                           <div className={this.getClasses('address')}>
-                            <label className="error">
-                              {this.props.getValidationMessages('address')}
-                            </label>
                             <input className="form-control" name="address"
                               onChange={this.onChange('address')}
                               placeholder="Host"
@@ -241,13 +236,13 @@ class ContentConnectComponent extends Component {
                               value={this.getValue('address')}
                               type="text"
                             />
+                            <label className="error">
+                              {this.props.getValidationMessages('address')}
+                            </label>
                           </div>
 
 
                           <div className={this.getClasses('database')}>
-                            <label className="error">
-                              {this.props.getValidationMessages('database')}
-                            </label>
                             <input className="form-control" name="database"
                               onChange={this.onChange('database')}
                               placeholder="Database"
@@ -255,12 +250,12 @@ class ContentConnectComponent extends Component {
                               value={this.getValue('database')}
                               type="text"
                             />
+                            <label className="error">
+                              {this.props.getValidationMessages('database')}
+                            </label>
                           </div>
 
                           <div className={this.getClasses('port')}>
-                            <label className="error">
-                              {this.props.getValidationMessages('port')}
-                            </label>
                             <input className="form-control" name="port"
                               onChange={this.onChange('port')}
                               placeholder="Port"
@@ -268,6 +263,9 @@ class ContentConnectComponent extends Component {
                               value={this.getValue('port')}
                               type="text"
                             />
+                            <label className="error">
+                              {this.props.getValidationMessages('port')}
+                            </label>
                           </div>
 
                           <div className="checkbox">
@@ -280,9 +278,6 @@ class ContentConnectComponent extends Component {
                           { currentFavorit.useSSH &&
                           <div>
                             <div className={this.getClasses('sshUser')}>
-                              <label className="error">
-                                {this.props.getValidationMessages('sshUser')}
-                              </label>
                               <input className="form-control" name="sshUser"
                                 onChange={this.onChange('sshUser')}
                                 placeholder="SSH user"
@@ -290,12 +285,12 @@ class ContentConnectComponent extends Component {
                                 ref="sshUser"
                                 type="text"
                               />
+                              <label className="error">
+                                {this.props.getValidationMessages('sshUser')}
+                              </label>
                             </div>
 
                             <div className={this.getClasses('sshPassword')}>
-                              <label className="error">
-                                {this.props.getValidationMessages('sshPassword')}
-                              </label>
                               <input className="form-control" name="sshPassword"
                                 onChange={this.onChange('sshPassword')}
                                 placeholder="SSH password"
@@ -303,12 +298,12 @@ class ContentConnectComponent extends Component {
                                 ref="sshPassword"
                                 type="password"
                               />
+                              <label className="error">
+                                {this.props.getValidationMessages('sshPassword')}
+                              </label>
                             </div>
 
                             <div className={this.getClasses('sshServer')}>
-                              <label className="error">
-                                {this.props.getValidationMessages('sshServer')}
-                              </label>
                               <input className="form-control" name="sshServer"
                                 onChange={this.onChange('sshServer')}
                                 placeholder="SSH server"
@@ -316,12 +311,12 @@ class ContentConnectComponent extends Component {
                                 ref="sshServer"
                                 type="text"
                               />
+                              <label className="error">
+                                {this.props.getValidationMessages('sshServer')}
+                              </label>
                             </div>
 
                             <div className={this.getClasses('sshPort')}>
-                              <label className="error">
-                                {this.props.getValidationMessages('sshPort')}
-                              </label>
                               <input className="form-control" name="sshPort"
                                 onChange={this.onChange('sshPort')}
                                 placeholder="SSH port"
@@ -329,6 +324,9 @@ class ContentConnectComponent extends Component {
                                 ref="sshPort"
                                 type="text"
                               />
+                              <label className="error">
+                                {this.props.getValidationMessages('sshPort')}
+                              </label>
                             </div>
 
                             <div className="form-group">
